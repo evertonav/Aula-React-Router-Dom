@@ -20,8 +20,14 @@ export function RoutesExemplo1() {
                 
 
                 <Route path="/Pesquisar" element={<PesquisarPai/>}>
-                    <Route path="/Pesquisar/Filho" element={<div>Filho</div>}/>
-                    <Route path="/Pesquisar/Filho/:id" element={<div>Filho com id</div>}/>
+                    <Route path="/Pesquisar/Filho" element={<div>
+                        Filho
+                        <button>Outro botão</button>
+                        </div>}/>
+                    <Route path="/Pesquisar/Filho/:id" element={<div>
+                        Filho com id
+                        <button>Botao de exemnplo filho com id</button>
+                        </div>}/>
                 </Route>
 
                 <Route path="/*" element={<div>Not Found</div>}/>
