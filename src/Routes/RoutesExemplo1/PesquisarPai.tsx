@@ -4,9 +4,7 @@ export function PesquisarPai(){
     return (
 
 
-        <div>
-            <Outlet />
-            
+        <div>                       
             <div style={{display: "flex", width: "100%", backgroundColor: 'red', gap: '12px'}}>
                 <Link to="/Cadastro">
                     Cadastro
@@ -17,7 +15,7 @@ export function PesquisarPai(){
                 </Link>
             </div>
 
-            
+            <Outlet />            
         </div>        
     )
 }

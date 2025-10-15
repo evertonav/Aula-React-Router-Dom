@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useContext } from "react";
-import { ExemploContextCreated } from "../../Contexts/ExemploContext";
+import { ExemploContextCreated } from "Contexts/ExemploContext";
 
 export function Home() {
     const exemploContext = useContext(ExemploContextCreated)

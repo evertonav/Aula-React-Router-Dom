@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom"
 import { CadastroListaSearch } from "./CadastroListaSearch"
 import { useContext } from "react"
-import { ExemploContextCreated } from "../../Contexts/ExemploContext"
+import { ExemploContextCreated } from "Contexts/ExemploContext"
 
 export function CadastroComId() {
     const { id } = useParams()
@@ -9,11 +9,11 @@ export function CadastroComId() {
     const contextoPratica = useContext(ExemploContextCreated)
 
     return (
-        <div>
+        <div style={{display: "flex", width: "100%", flexDirection: "column", gap: 14, backgroundColor: "red"}}>
             Cadastro Id: {id}
             Nome: {contextoPratica?.exemplo.Nome}
-            <CadastroListaSearch />
-        
+
+            <CadastroListaSearch />        
         </div>
     )
 }

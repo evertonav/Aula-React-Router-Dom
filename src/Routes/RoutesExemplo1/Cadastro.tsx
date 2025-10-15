@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { CadastroComId } from "./CadastroComId";
 import { useContext } from "react";
-import { ExemploContextCreated } from "../../Contexts/ExemploContext";
+import { ExemploContextCreated } from "Contexts/ExemploContext";
 
 export function Cadastro() {
     const navigate = useNavigate()
@@ -12,16 +12,16 @@ export function Cadastro() {
             Cadastro
             <Link to={"/"}>
                 Home
-            </Link>
-
-            
+            </Link>            
 
             <div style={{display: "flex", gap: 10, flexDirection: "column", width: 100}}>
                 <input title="Nome"/>
 
                 <input title="Descricao"/>
 
-                {contextoPratica?.exemplo.Nome}
+                <div>
+                    Nome: {contextoPratica?.exemplo.Nome}
+                </div>                
 
                 <CadastroComId />
 

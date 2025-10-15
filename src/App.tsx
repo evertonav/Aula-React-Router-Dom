@@ -1,9 +1,12 @@
+import { ExemploContextProvider } from 'Contexts/ExemploContext';
 import './App.css';
 import { RoutesExemplo1 } from './Routes/RoutesExemplo1/RoutesExemplo1';
 
 const App = () => {
   return (
-    <RoutesExemplo1 />
+    <ExemploContextProvider>
+      <RoutesExemplo1 />
+    </ExemploContextProvider>    
   );
 };
 
