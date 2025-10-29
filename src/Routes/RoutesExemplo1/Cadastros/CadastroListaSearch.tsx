@@ -1,10 +1,7 @@
 import { useSearchParams } from "react-router-dom"
-import { useContext } from "react"
-import { ExemploContextCreated } from "Contexts/ExemploContext"
 
 export function CadastroListaSearch() {
     const [URLSearchParams] = useSearchParams()
-    const contextoPratica = useContext(ExemploContextCreated)
 
     console.log('useSearchParams: ',useSearchParams().values)
 
@@ -16,7 +13,7 @@ export function CadastroListaSearch() {
     return (
         <div style={{display: "flex", flexDirection: "column", width: "100%", backgroundColor: "blue"}}>
             Cadastro Lista Search. Id: {id}, 
-            Nome: {contextoPratica?.exemplo.Nome}
+            Nome: {Nome}
         </div>
     )
 }
